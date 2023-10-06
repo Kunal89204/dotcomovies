@@ -1,0 +1,512 @@
+* {
+    text-transform: capitalize;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Removing display of pc screens */
+.pc {
+    display: none;
+}
+
+.container1 {
+    display: none;
+}
+
+
+body {
+    background-color: black;
+}
+
+.phone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 5px;
+}
+
+.menu #menu {
+    background-color: black;
+    border: 1px solid rgba(248, 91, 92);
+    height: 30px;
+}
+
+.menu #menu option a {
+    color: black;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 50%;
+
+}
+
+.recon {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.recon a button {
+    border: 1px solid rgba(248, 91, 92);
+    background-color: black;
+}
+
+.container {
+    position: relative;
+}
+
+.box .poster {
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 35%;
+    color: white;
+    padding: 10px;
+    font-size: smaller;
+}
+
+.content .desc {
+    width: 60%;
+    font-size: 10px;
+}
+
+h1 {
+    text-decoration: none;
+    background: linear-gradient(to right, rgb(242, 56, 56), rgb(243, 120, 44));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+}
+
+.watch a button {
+    border: 0px;
+    background-image: linear-gradient(to right, rgb(243, 45, 45), rgb(247, 115, 33));
+    padding: 5px 15px 5px 15px;
+    margin-top: 10px;
+    font-size: larger;
+    color: black;
+}
+
+.movies {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.responsive {
+    width: 10%;
+    margin: 5px;
+}
+
+.card {
+    width: fit-content;
+    position: relative;
+    padding: 0px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card img:hover {
+    cursor: pointer;
+}
+
+.card:hover .hover {
+    display: none;
+}
+
+.name {
+    font-size: larger;
+}
+
+.right {
+    float: right;
+}
+
+.hover {
+    display: none;
+}
+
+ a{
+    transition: 0.2s ease;
+}
+
+
+
+.info .name a:hover {
+    text-decoration: none;
+    background: linear-gradient(to right, rgba(248, 91, 92), rgba(245, 137, 69));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* Responsiveness */
+
+@media screen and (min-width: 1400px) {
+    .responsive {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .responsive {
+        width: 45%;
+    }
+
+    .h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .responsive {
+        width: 30%;
+    }
+
+    .h2 {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width:540px) {
+    .responsive{
+        width: 22%;
+    }
+
+    .card img {
+        transition: 0.5s;
+    }
+
+    .card img:hover {
+        transform: scale(1.065);
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    /* Removing display of mobile screen */
+    .phone {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .container {
+        display: none;
+    }
+
+    /* Applying display for pc screen */
+
+    .pc {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container1 {
+        display: block;
+    }
+
+    .movies {
+        display: block;
+    }
+
+    /* Applying CSS for the pc screen */
+
+    .logo {
+        width: 150px;
+        padding: 10px;
+    }
+
+    .logo a img {
+        float: left;
+        width: 100%;
+    }
+
+    nav {
+        width: fit-content;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        width: fit-content;
+    }
+
+    ul li {
+        padding: 20px 30px 20px 30px;
+
+    }
+
+    ul li a {
+        text-decoration: none;
+        background: linear-gradient(to right, rgba(248, 91, 92), rgba(245, 137, 69));
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 110%;
+        transition: 0.2s ease;
+
+    }
+
+    ul li a:hover {
+        background: linear-gradient(to right, rgba(245, 137, 69), rgba(248, 91, 92));
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .recont {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 9px;
+    }
+
+    .recont a button {
+        color: black;
+        height: 40px;
+        border-radius: 10px;
+        background-image: linear-gradient(to right, rgba(248, 91, 92), rgba(245, 137, 69));
+        border: 0px solid;
+        font-size: 19px;
+        transition: background-image 0.5s ease;
+    }
+
+    .recont a button:hover {
+        cursor: pointer;
+        background-image: linear-gradient(to right, rgba(245, 137, 69), rgba(248, 91, 92));
+    }
+
+    .container1 {
+        position: relative;
+        /* border-bottom: 5px solid white; */
+    }
+
+    .container1 img {
+        width: 100%;
+        height: 75vh;
+    }
+
+    .box1 {
+        width: 50%;
+        position: absolute;
+        top: 30%;
+        margin-left: 50px;
+        padding: 10px;
+        /* font-size: smaller; */
+        /* font-size: larger; */
+        /* bottom: 60%; */
+
+    }
+
+    .name1 {
+        width: fit-content;
+    }
+
+    .name1 p {
+        font-size: 50px;
+        color: rgb(237, 75, 11);
+        text-shadow: 0px 2px 1px;
+    }
+
+    .info1 {
+        color: white;
+        font-weight: 100;
+        line-height: 20px;
+        padding: 5px 0px 5px 0px;
+    }
+
+
+    .watch1 {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .watch1 a button {
+        border: 0px;
+        background-image: linear-gradient(to right, rgb(243, 45, 45), rgb(247, 115, 33));
+        padding: 20px 30px 20px 30px;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: larger;
+    }
+
+    .watch1 a button:hover {
+        cursor: pointer;
+        background: linear-gradient(to right, rgb(247, 115, 33), rgb(247, 59, 59));
+    }
+
+    .h2 {
+        width: 100%;
+        padding: 20px;
+
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .movies {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .responsive {
+        width: 13%;
+        margin: 5px;
+    }
+
+    .card {
+        width: fit-content;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .card img:hover {
+            transform: scale(1.065);
+    }
+
+    .name {
+        font-size: larger;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .hover {
+        position: absolute;
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 300px;
+        bottom: 50%;
+        left: 50%;
+        background-color: rgb(245, 242, 242);
+        display: none;
+        z-index: 1;
+        font-size: smaller;
+
+    }
+
+    .onlypad {
+        padding-left: 10px;
+        font-size: larger;
+    }
+
+    .hover .title {
+        font-size: larger;
+        margin: 5px 0px 10px 0px;
+        color: black;
+        font-weight: bold;
+
+    }
+
+    .hover .desc {
+        width: 100%;
+        color: black;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+
+    .pop {
+        width: 100%;
+        /* background-color: antiquewhite; */
+        display: flex;
+
+    }
+
+    .hd {
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: white;
+        background-color: black;
+    }
+
+    .year {
+        color: black;
+        margin-left: 10px;
+        margin-right: 25px;
+    }
+
+    .duration {
+        color: black;
+    }
+
+
+    .imdb {
+        border: 0px solid transparent;
+        background-color: yellow;
+        color: black;
+        border-radius: 5px;
+        width: fit-content;
+        margin: 0px 22px 0px 22px;
+    }
+
+    .watchnow a {
+        border: 0px solid transparent;
+        border-radius: 0px 0px 5px 5px;
+
+    }
+
+    .watchnow a button {
+        width: 100%;
+        border: 0px solid transparent;
+        color: black;
+        height: 50px;
+        background: linear-gradient(to right, rgb(242, 56, 56), rgb(243, 120, 44));
+        font-size: 25px;
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .watchnow a button:hover {
+        cursor: pointer;
+        background: linear-gradient(to right, rgb(243, 120, 44), rgb(242, 56, 56));
+    }
+
+    .card:hover .hover {
+        display: block;
+    }
+
+
+
+}
